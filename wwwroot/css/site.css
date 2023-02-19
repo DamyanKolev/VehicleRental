@@ -1,15 +1,43 @@
-html {
-  font-size: 14px;
+@font-face {
+  font-family: "72";
+  src: url("../fonts/72-Regular-full.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+@font-face {
+  font-family: "72";
+  src: url("../fonts/72-Bold-full.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+@font-face {
+  font-family: "72";
+  src: url("../fonts/72-Light-full.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SAP-icons";
+  src: url("../fonts/SAP-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BusinessSuiteInAppSymbols";
+  src: url("../fonts/BusinessSuiteInAppSymbols.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SAP-icons-TNT";
+  src: url("../fonts/SAP-icons-TNT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -18,5 +46,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin: 0;
+  /* margin-bottom: 60px; */
+  background-color: #f5f6f7;
 }

@@ -7,6 +7,6 @@ namespace VehicleRental.Models
     {
         [Key]
         public int Id { get; set; }
-
+        
     }
 }

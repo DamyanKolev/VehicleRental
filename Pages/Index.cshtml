@@ -5,6 +5,34 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <section class="fd-dialog-docs-static fd-dialog @Model.HideShowDialog" id="login">
+        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
+            <header class="fd-dialog__header fd-bar fd-bar--header">
+                <div class="fd-bar__left">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent" asp-page-handler="CloseDialogWindow"><i class="sap-icon--decline"></i></button>
+                    </div>
+                </div>
+            </header>
+            <div class="fd-dialog__body">
+                <div class="dialog__title__container">
+                    <h4 class="fd-title fd-title--h4 fd-title--wrap">Sign up or Sign in</h4>
+                    <p class="fd-text">Type your email address below and we'll check if you already have an </p>
+                    <p class="fd-text">account. Otherwise, we'll quickly create one for you.</p>
+                </div>
+                <br>
+
+                <div class="fd-form-group" role="group" aria-labelledby="basicGroupHeader">
+                    <div class="fd-form-item">
+                        <input class="fd-input" type="text" id="input-1d" placeholder="Email address">
+                    </div>
+                </div>
+
+                <div class="form__button__container">
+                    <button class="fd-button fd-button--positive form__button" aria-pressed="false" disabled>Next</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 </div>

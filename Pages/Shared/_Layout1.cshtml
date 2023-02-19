@@ -4,11 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - VehicleRental</title>
-    <link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css' rel='stylesheet'>
-    @Html.Raw("<link href='https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon_hcb/css_variables.css' rel='stylesheet'>")
-    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/VehicleRental.styles.css" asp-append-version="true" />
+    @Html.Raw("<link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css' rel='stylesheet'>")
+    @Html.Raw("<link href='https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css' rel='stylesheet'>")
+    @Html.Raw("<link href='https://unpkg.com/fundamental-styles@latest/dist/theming/sap_horizon.css' rel='stylesheet'>")
+        
 </head>
 <body>
     
+    <header>
+        <div class="fd-shellbar fd-shellbar--xl">
+            <div class="fd-shellbar__group fd-shellbar__group--product">
+                <a class="fd-shellbar__logo" href="https://www.sap.com/index.html" target="_blank">
+                    <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
+                </a>
+            </div>
+            <div class="fd-shellbar__group fd-shellbar__group--actions">
+                <div class="fd-shellbar__action">
+                    <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" onclick="onPopoverClick('ZY3AY276')" aria-expanded="false" aria-haspopup="true" role="button" tabindex="0">
+                        <span class="fd-button__text">Sign up | Login</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
 </body>
 </html>
