@@ -1,7 +1,14 @@
+using VehicleRental;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//Add database context service to the container
+builder.Services.AddDbContext<DatabaseContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Postgresql")));
 
 var app = builder.Build();
 

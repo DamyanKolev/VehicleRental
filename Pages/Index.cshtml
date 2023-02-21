@@ -5,12 +5,12 @@
 }
 
 <div class="text-center">
-    <section class="fd-dialog-docs-static fd-dialog @Model.HideShowDialog" id="login">
+    <section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="login-dialog">
         <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <button class="fd-button fd-button--transparent" asp-page-handler="CloseDialogWindow"><i class="sap-icon--decline"></i></button>
+                        <button class="fd-button fd-button--transparent" id="login-dialog--hide-button"><i class="sap-icon--decline"></i></button>
                     </div>
                 </div>
             </header>
@@ -36,3 +36,7 @@
         </div>
     </section>
 </div>
+
+
+
+<script src="~/js/main.js" asp-append-version="true"></script>
